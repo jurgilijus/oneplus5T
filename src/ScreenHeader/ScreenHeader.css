@@ -1,0 +1,43 @@
+.header-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 42%;
+  width: 260px;
+  padding: 2.5px 10px;
+  color: white;
+}
+.wi-fi-aligne {
+  display: flex;
+  flex-direction: row;
+}
+
+.triangles {
+  position: relative;
+  top: 2px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+  line-height: 0;
+}
+.up {
+  position: relative;
+  top: 1px;
+}
+.down {
+  position: relative;
+  top: -1px;
+}
+.header-text {
+  font-size: 12px;
+}
+.battery {
+  padding-left: 5px;
+}

@@ -1,0 +1,18 @@
+.clock-conteiner {
+  position: relative;
+  left: 42%;
+  width: 260px;
+  height: 190px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.clock {
+  font-size: 50px;
+  font-weight: 100;
+}
+.date {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
