@@ -1,0 +1,22 @@
+.home-screen-conteiner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../Assets/phone1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 589px;
+  width: 284px;
+}
+.home-screen {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  height: 524px;
+  width: 257px;
+  background-color: white;
+}
