@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 export default class TimeRules extends Component {
   addZero = (i) => {

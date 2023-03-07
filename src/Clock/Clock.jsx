@@ -1,24 +1,19 @@
 import React from "react";
-import TimeRules from "../TimeRules";
 
 // CSS
 import "./Clock.css";
 
-function Clock() {
-  const time = new Date();
-  const timeRules = new TimeRules();
-
+function Clock({ hours, minutes, day, month, date }) {
   return (
     <div className="clock-conteiner">
       <h1 className="clock">
-        {timeRules.addZero(time.getHours())}:
-        {timeRules.addZero(time.getMinutes())}
+        {hours}:{minutes}
       </h1>
-      <p className="date">
-        {timeRules.weekDays[time.getDay() - 1]},
-        {timeRules.months[time.getMonth()]}
-        {time.getDate()}
-      </p>
+      <div className="date">
+        <p>{day},</p>
+        <p>{month}</p>
+        <p>{date}</p>
+      </div>
     </div>
   );
 }
