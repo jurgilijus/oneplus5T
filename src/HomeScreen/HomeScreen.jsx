@@ -42,6 +42,15 @@ function HomeScreen() {
             month={month}
             date={date}
           />
+          <div className="home-screen-lowerSection">
+            <div>
+              <h1>weather</h1>
+              <h1>Apps</h1>
+            </div>
+            <div>
+              <h1>Calender</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>

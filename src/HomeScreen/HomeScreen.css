@@ -32,3 +32,13 @@
   height: 524px;
   width: 514px;
 }
+.home-screen-lowerSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  left: 42%;
+  width: 265px;
+  background-color: red;
+}
