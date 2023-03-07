@@ -1,7 +1,13 @@
 import React, { useCallback, useEffect, useState } from "react";
+import Apps from "../Apps/Apps";
+import Calender from "../Calender/Calender";
 import Clock from "../Clock/Clock";
 import ScreenHeader from "../ScreenHeader/ScreenHeader";
 import TimeRules from "../TimeRules";
+import Weather from "../Weather/Weather";
+import { IoIosArrowUp } from "react-icons/io";
+import AppsFooter from "../AppsFooter/AppsFooter";
+import Footer from "../Footer/Footer";
 
 // CSS
 import "./HomeScreen.css";
@@ -44,13 +50,18 @@ function HomeScreen() {
           />
           <div className="home-screen-lowerSection">
             <div>
-              <h1>weather</h1>
-              <h1>Apps</h1>
+              <Weather day={day} month={month} date={date} />
+              <Apps />
             </div>
             <div>
-              <h1>Calender</h1>
+              <Calender day={day} date={date} />
             </div>
           </div>
+          <div className="arrow-conteiner">
+            <IoIosArrowUp size={20} className="arrow" />
+          </div>
+          <AppsFooter />
+          <Footer />
         </div>
       </div>
     </div>

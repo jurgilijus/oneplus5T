@@ -1,0 +1,29 @@
+.appsfooter-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 42.5%;
+  width: 265px;
+  gap: 20px;
+  /* background-color: red; */
+  padding: 2px 0px;
+}
+.phone {
+  width: 30px;
+}
+.messanger-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.messanger {
+  width: 40px;
+}
+.chrome {
+  width: 30px;
+}

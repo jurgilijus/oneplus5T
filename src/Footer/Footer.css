@@ -1,0 +1,18 @@
+.footer-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  left: 42.5%;
+  width: 258px;
+
+  padding: 6px 10px;
+  height: 35px;
+}
+.triangle,
+.circle,
+.rectangle {
+  color: rgb(233, 231, 231);
+  transform: rotate(-90deg);
+}

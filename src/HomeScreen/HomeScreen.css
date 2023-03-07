@@ -35,10 +35,21 @@
 .home-screen-lowerSection {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 8px;
+  justify-content: space-between;
   position: relative;
   left: 42%;
   width: 265px;
-  background-color: red;
+  padding: 0px 20px;
+}
+.arrow-conteiner {
+  position: relative;
+  left: 42%;
+  width: 265px;
+  color: white;
+  padding: 10px 0px;
+}
+.arrow {
+  position: relative;
+  left: 51%;
+  transform: translate(-50%);
 }

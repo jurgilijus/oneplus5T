@@ -1,0 +1,51 @@
+.calendar-conteiner {
+  width: 130px;
+  height: 195px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background-color: rgb(224, 222, 222);
+}
+.calendar-month {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.plus {
+  font-size: 20px;
+}
+.calendar-content {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 4px;
+  padding: 4px 4px;
+}
+.calendar-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  color: white;
+  border-radius: 50%;
+  font-size: 8px;
+}
+.day {
+  position: relative;
+  top: 1px;
+}
+.date {
+  position: relative;
+  top: -1px;
+}
+.calendaer-txt {
+  font-size: 9px;
+}
