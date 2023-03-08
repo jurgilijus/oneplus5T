@@ -6,8 +6,7 @@ import "./Weather.css";
 
 function Weather({ day, month, date }) {
   const [data, setData] = useState({});
-  const url =
-    "https://api.openweathermap.org/data/2.5/weather?lat=54.68&lon=25.27&appid=68e483f66271334a7dfec3073f8dec34&units=metric";
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=54.68&lon=25.27&appid=${process.env.REACT_APP_WEATHER_API}&units=metric`;
 
   useEffect(() => {
     const api = axios.create({
