@@ -1,22 +1,23 @@
-import React from "react";
-// import axios from "axios";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 // Css
 import "./Weather.css";
 
 function Weather({ day, month, date }) {
-  // const [data, setData] = useState({});
-  // const url =
-  //   "https://api.openweathermap.org/data/2.5/weather?lat=54.687157&lon=25.279652&appid=68e483f66271334a7dfec3073f8dec34";
+  const [data, setData] = useState({});
+  const url =
+    "https://api.openweathermap.org/data/2.5/weather?lat=54.68&lon=25.27&appid=68e483f66271334a7dfec3073f8dec34&units=metric";
 
-  // useEffect(() => {
-  //   axios.get(url).then((response) => {
-  //     setData(response.data);
-  //   });
-  // }, []);
-
+  useEffect(() => {
+    const api = axios.create({
+      baseURL: url,
+    });
+    api.get("/").then((res) => {
+      setData(res.data);
+    });
+  }, []);
   const monthForWheather = month.slice(0, 3);
-
   return (
     <div className="weather-conteiner">
       <div>
@@ -25,12 +26,12 @@ function Weather({ day, month, date }) {
           <p>{monthForWheather}</p>
           <p>{date}</p>
         </div>
-        <p className="weather">sunny</p>
+        <p className="weather">{data.weather?.[0].main}</p>
       </div>
 
       <div>
         <p className="temperature">
-          -5 <span>&#176;</span>
+          {Math.round(data.main?.temp - 273.15)} <span>&#176;</span>
         </p>
       </div>
 
