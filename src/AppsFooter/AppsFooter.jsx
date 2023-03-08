@@ -18,8 +18,10 @@ function AppsFooter() {
       <div className="messanger-conteiner">
         <img src={chrome} alt="chrome" className="chrome" />
       </div>
-      <img src={photo} alt="chrome" className="chrome" />
-      <img src={googlePhotos} alt="chrome" className="chrome" />
+      <img src={photo} alt="chrhome" className="chrome" />
+      <div className="messanger-conteiner">
+        <img src={googlePhotos} alt="googlePhotos" className="google-photos" />
+      </div>
     </div>
   );
 }

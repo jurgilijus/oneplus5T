@@ -6,9 +6,9 @@ import "./Weather.css";
 
 function Weather({ day, month, date }) {
   const [data, setData] = useState({});
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=54.68&lon=25.27&appid=${process.env.REACT_APP_WEATHER_API}&units=metric`;
 
   useEffect(() => {
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=54.687157&lon=25.279652&appid=${process.env.REACT_APP_WEATHER_API}&units=metric`;
     const api = axios.create({
       baseURL: url,
     });
@@ -30,7 +30,8 @@ function Weather({ day, month, date }) {
 
       <div>
         <p className="temperature">
-          {Math.round(data.main?.temp - 273.15)} <span>&#176;</span>
+          {Math.round(data.main?.temp - 273.15)}
+          <span>&#176;</span>
         </p>
       </div>
 
