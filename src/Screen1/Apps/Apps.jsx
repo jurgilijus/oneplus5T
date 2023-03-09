@@ -1,10 +1,10 @@
 import React from "react";
 import { BsFacebook } from "react-icons/bs";
-import playStore from "../Assets/playStore.png";
-import google from "../Assets/google.png";
-import maps from "../Assets/maps.png";
-import gmail from "../Assets/gmail.png";
-import chrome from "../Assets/chrome.png";
+import playStore from "../../Assets/playStore.png";
+import google from "../../Assets/google.png";
+import maps from "../../Assets/maps.png";
+import gmail from "../../Assets/gmail.png";
+import chrome from "../../Assets/chrome.png";
 
 // CSS
 import "./Apps.css";

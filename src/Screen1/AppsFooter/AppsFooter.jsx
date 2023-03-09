@@ -1,9 +1,9 @@
 import React from "react";
-import phone from "../Assets/phone.png";
-import messanger from "../Assets/messanger.png";
-import chrome from "../Assets/chrome.png";
-import photo from "../Assets/photo.png";
-import googlePhotos from "../Assets/googlePhotos.png";
+import phone from "../../Assets/phone.png";
+import messanger from "../../Assets/messanger.png";
+import chrome from "../../Assets/chrome.png";
+import photo from "../../Assets/photo.png";
+import googlePhotos from "../../Assets/googlePhotos.png";
 
 // CSS
 import "./AppsFooter.css";

@@ -3,16 +3,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../Assets/phone1.png");
+  background-image: url("../../Assets/phone1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 589px;
   width: 284px;
+  overflow: hidden;
 }
 .home-screen {
   position: relative;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -25,7 +25,7 @@
 .screen-img {
   position: relative;
   left: -85%;
-  background-image: url("../Assets/homeScreen.jpg");
+  background-image: url("../../Assets/homeScreen.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

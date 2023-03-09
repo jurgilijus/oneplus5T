@@ -3,7 +3,7 @@ import Apps from "../Apps/Apps";
 import Calender from "../Calender/Calender";
 import Clock from "../Clock/Clock";
 import ScreenHeader from "../ScreenHeader/ScreenHeader";
-import TimeRules from "../TimeRules";
+import TimeRules from "../../TimeRules";
 import Weather from "../Weather/Weather";
 import { IoIosArrowUp } from "react-icons/io";
 import AppsFooter from "../AppsFooter/AppsFooter";

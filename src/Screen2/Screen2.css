@@ -1,0 +1,16 @@
+.screen2-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  height: 524px;
+  width: 257px;
+  overflow: hidden;
+  border-radius: 5px;
+}
