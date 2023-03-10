@@ -4,7 +4,7 @@
   align-items: center;
   gap: 40px;
   position: relative;
-  left: 42.5%;
+  left: 0%;
   width: 258px;
 
   padding: 6px 10px;
@@ -13,6 +13,6 @@
 .triangle,
 .circle,
 .rectangle {
-  color: rgb(233, 231, 231);
+  color: rgb(255, 255, 255);
   transform: rotate(-90deg);
 }

@@ -14,36 +14,40 @@
 .home-screen {
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   height: 524px;
-  width: 257px;
+  width: 258px;
   background-color: white;
   overflow: hidden;
 }
 .screen-img {
   position: relative;
-  left: -85%;
+  left: 1px;
   background-image: url("../../Assets/homeScreen.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 524px;
-  width: 514px;
+  width: 512px;
+}
+.screen-aligne {
+  position: relative;
+  top: 20px;
 }
 .home-screen-lowerSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  left: 42%;
+  left: 0%;
   width: 265px;
   padding: 0px 20px;
 }
 .arrow-conteiner {
   position: relative;
-  left: 42%;
+  left: 0%;
   width: 265px;
   color: white;
   padding: 10px 0px;
