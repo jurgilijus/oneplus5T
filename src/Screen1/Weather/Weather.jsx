@@ -28,8 +28,6 @@ function Weather({ day, month, date }) {
     }
   };
 
-  console.log(color);
-
   return (
     <div className="weather-conteiner">
       <div>
