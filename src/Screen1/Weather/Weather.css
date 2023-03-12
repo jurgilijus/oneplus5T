@@ -12,6 +12,13 @@
   filter: drop-shadow(-2px 2px 1px gray);
 }
 .temperature {
+  display: flex;
   font-size: 25px;
   filter: drop-shadow(-2px 2px 1px gray);
+}
+.red {
+  color: red;
+}
+.white {
+  color: white;
 }

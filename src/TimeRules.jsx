@@ -8,7 +8,7 @@ export default class TimeRules extends Component {
     return i;
   };
 
-  weekDays = ["mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  weekDays = ["Sun", "mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   months = [
     "january",

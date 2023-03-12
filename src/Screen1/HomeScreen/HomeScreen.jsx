@@ -21,7 +21,7 @@ function HomeScreen() {
   const [hours, setHours] = useState(timeRules.addZero(time.getHours()));
   const [minutes, setMinutes] = useState(timeRules.addZero(time.getMinutes()));
   // const [seconds, setSeconds] = useState(timeRules.addZero(time.getSeconds()));
-  const day = timeRules.weekDays[time.getDay() - 1];
+  const day = timeRules.weekDays[time.getDay()];
   const month = timeRules.months[time.getMonth()];
   const date = time.getDate();
 
@@ -43,16 +43,11 @@ function HomeScreen() {
   return (
     <div className="home-screen-conteiner">
       <ScreenHeader hours={hours} minutes={minutes} />
-      <Swiper
-        centeredSlides={true}
-        centeredSlidesBounds={true}
-        initialSlide={1}
-        direction="horizontal"
-        className="home-screen"
-      >
+      <Swiper initialSlide={1} direction={"horizontal"} className="home-screen">
         <SwiperSlide>
           <Screen2 />
         </SwiperSlide>
+
         <SwiperSlide className="screen-img ">
           <div className="screen-aligne">
             <Clock
@@ -75,18 +70,14 @@ function HomeScreen() {
               <IoIosArrowUp size={20} className="arrow" />
             </div>
             <AppsFooter />
-            <Footer />
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <Screen2 />
         </SwiperSlide>
       </Swiper>
-      <Swiper direction="vertical">
-        <SwiperSlide>
-          <Screen2 />
-        </SwiperSlide>
-      </Swiper>
+      <Footer />
     </div>
   );
 }
