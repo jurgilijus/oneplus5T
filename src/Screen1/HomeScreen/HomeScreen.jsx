@@ -8,12 +8,9 @@ import Weather from "../Weather/Weather";
 import { IoIosArrowUp } from "react-icons/io";
 import AppsFooter from "../AppsFooter/AppsFooter";
 import Footer from "../Footer/Footer";
-import Screen2 from "../../Screen2/Screen2";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // CSS
 import "./HomeScreen.css";
-import "swiper/css";
 
 function HomeScreen() {
   const time = new Date();
@@ -41,44 +38,38 @@ function HomeScreen() {
   }, [refreshClock]);
 
   return (
-    <div className="home-screen-conteiner">
-      <ScreenHeader hours={hours} minutes={minutes} />
-      <Swiper initialSlide={1} direction={"horizontal"} className="home-screen">
-        <SwiperSlide>
-          <Screen2 />
-        </SwiperSlide>
-
-        <SwiperSlide className="screen-img ">
-          <div className="screen-aligne">
-            <Clock
-              hours={hours}
-              minutes={minutes}
-              day={day}
-              month={month}
-              date={date}
-            />
-            <div className="home-screen-lowerSection">
-              <div>
-                <Weather day={day} month={month} date={date} />
-                <Apps />
+    <>
+      <div className="home-screen-conteiner">
+        <ScreenHeader hours={hours} minutes={minutes} />
+        <div className="home-screen">
+          <div className="screen-img ">
+            <div className="screen-aligne">
+              <Clock
+                hours={hours}
+                minutes={minutes}
+                day={day}
+                month={month}
+                date={date}
+              />
+              <div className="home-screen-lowerSection">
+                <div>
+                  <Weather day={day} month={month} date={date} />
+                  <Apps />
+                </div>
+                <div>
+                  <Calender day={day} date={date} />
+                </div>
               </div>
-              <div>
-                <Calender day={day} date={date} />
+              <div className="arrow-conteiner">
+                <IoIosArrowUp size={20} className="arrow" />
               </div>
+              <AppsFooter />
             </div>
-            <div className="arrow-conteiner">
-              <IoIosArrowUp size={20} className="arrow" />
-            </div>
-            <AppsFooter />
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Screen2 />
-        </SwiperSlide>
-      </Swiper>
-      <Footer />
-    </div>
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

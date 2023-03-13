@@ -14,7 +14,7 @@
 .home-screen {
   position: relative;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   height: 524px;
@@ -24,13 +24,13 @@
 }
 .screen-img {
   position: relative;
-  left: 1px;
+  left: 0px;
   background-image: url("../../Assets/homeScreen.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 600px !important;
-  width: 700px;
+  height: 524px;
+  width: 258px;
 }
 .screen-aligne {
   position: relative;

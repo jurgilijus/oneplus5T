@@ -18,12 +18,12 @@ function Weather({ day, month, date }) {
   }, []);
   const monthForWheather = month.slice(0, 3);
 
-  const changeColor = Math.round(data.main?.temp - 273.15);
+  const changeColor = Math.round(data.main?.temp - 273.15).toString();
   const [color, setColor] = useState(true);
   window.onload = (e) => {
-    if (changeColor.toString().slice(1, 2) === "1") {
+    if (changeColor.includes("1")) {
       setColor(!color);
-    } else if (changeColor.toString().slice(1, 2) !== "1") {
+    } else if (changeColor.includes("1") === false) {
       setColor(color);
     }
   };
@@ -41,15 +41,9 @@ function Weather({ day, month, date }) {
 
       <div>
         <div className="temperature">
-          {Math.round(data.main?.temp - 273.15)
-            .toString()
-            .includes("-")
-            ? "-"
-            : ""}
+          {changeColor.includes("-") ? "-" : ""}
           <span className={!color ? "red" : "white"}>
-            {Math.round(data.main?.temp - 273.15)
-              .toString()
-              .slice(1, 2)}
+            {changeColor.includes("-") ? changeColor.slice(1, 3) : changeColor}
           </span>
           <span> &#176;</span>
         </div>
