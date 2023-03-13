@@ -43,7 +43,17 @@ function Weather({ day, month, date }) {
         <div className="temperature">
           {changeColor.includes("-") ? "-" : ""}
           <span className={!color ? "red" : "white"}>
-            {changeColor.includes("-") ? changeColor.slice(1, 3) : changeColor}
+            {changeColor.includes("-") ? (
+              changeColor.slice(1, 3).length === 1 ? (
+                <p className={!color ? "red" : "white"}>{changeColor}</p>
+              ) : (
+                <p className={!color ? "red" : "white"}>
+                  {changeColor.slice(1, 2)}
+                </p>
+              )
+            ) : (
+              changeColor
+            )}
           </span>
           <span> &#176;</span>
         </div>
