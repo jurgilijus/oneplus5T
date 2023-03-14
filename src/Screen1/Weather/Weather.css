@@ -22,3 +22,6 @@
 .white {
   color: white;
 }
+.aligne {
+  display: flex;
+}

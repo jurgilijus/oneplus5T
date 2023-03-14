@@ -8,9 +8,14 @@ import Weather from "../Weather/Weather";
 import { IoIosArrowUp } from "react-icons/io";
 import AppsFooter from "../AppsFooter/AppsFooter";
 import Footer from "../Footer/Footer";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 // CSS
 import "./HomeScreen.css";
+import "swiper/css";
+import Screen2 from "../../Screen2/Screen2";
+import Screen3 from "../../Screen3";
+import Screen5 from "../../Screen5";
+import Screen4 from "../../screen4";
 
 function HomeScreen() {
   const time = new Date();
