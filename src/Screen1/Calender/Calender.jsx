@@ -3,12 +3,12 @@ import React from "react";
 // CSS
 import "./Calender.css";
 
-function Calender({ day, date }) {
+function Calender({ day, date, month }) {
   const dayForCalendar = day.slice(0, 1);
   return (
     <div className="calendar-conteiner">
       <div className="calendar-header">
-        <p className="calendar-month">march</p>
+        <p className="calendar-month">{month}</p>
         <p className="plus">+</p>
       </div>
       <div className="calendar-content">

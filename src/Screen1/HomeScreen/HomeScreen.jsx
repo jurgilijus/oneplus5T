@@ -1,21 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
-import Apps from "../Apps/Apps";
-import Calender from "../Calender/Calender";
-import Clock from "../Clock/Clock";
 import ScreenHeader from "../ScreenHeader/ScreenHeader";
 import TimeRules from "../../TimeRules";
-import Weather from "../Weather/Weather";
-import { IoIosArrowUp } from "react-icons/io";
-import AppsFooter from "../AppsFooter/AppsFooter";
 import Footer from "../Footer/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
+import MainScreen from "./MainScreen";
+
 // CSS
 import "./HomeScreen.css";
-import "swiper/css";
-import Screen2 from "../../Screen2/Screen2";
-import Screen3 from "../../Screen3";
-import Screen5 from "../../Screen5";
-import Screen4 from "../../screen4";
 
 function HomeScreen() {
   const time = new Date();
@@ -47,30 +37,13 @@ function HomeScreen() {
       <div className="home-screen-conteiner">
         <ScreenHeader hours={hours} minutes={minutes} />
         <div className="home-screen">
-          <div className="screen-img ">
-            <div className="screen-aligne">
-              <Clock
-                hours={hours}
-                minutes={minutes}
-                day={day}
-                month={month}
-                date={date}
-              />
-              <div className="home-screen-lowerSection">
-                <div>
-                  <Weather day={day} month={month} date={date} />
-                  <Apps />
-                </div>
-                <div>
-                  <Calender day={day} date={date} />
-                </div>
-              </div>
-              <div className="arrow-conteiner">
-                <IoIosArrowUp size={20} className="arrow" />
-              </div>
-              <AppsFooter />
-            </div>
-          </div>
+          <MainScreen
+            hours={hours}
+            minutes={minutes}
+            month={month}
+            date={date}
+            day={day}
+          />
         </div>
         <Footer />
       </div>
